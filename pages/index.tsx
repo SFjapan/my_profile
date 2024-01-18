@@ -17,7 +17,7 @@ export default function Index(){
             
             <div className="profile text-lg  bg-orange-200" id="profile">
                 <h1>自己紹介</h1>
-                <ruby>福永　司音<rt>フクナガ　シオン</rt></ruby>
+                <ruby>福永 司音<rt>フクナガ シオン</rt></ruby>
                 <p>誕生日 2003/12/26</p>
                 <p>趣味 
                     <ul>
