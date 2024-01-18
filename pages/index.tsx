@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import 'tailwindcss/tailwind.css'
 
 export default function Index(){
@@ -10,21 +11,20 @@ export default function Index(){
     return(
         <div className="flex flex-col justify-center items-center text-center">
             <div className="border-solid border-2 border-gray-400 flex flex-col w-3/4 ">
-                <a href="/#profile" className="font-black">自己紹介</a>
-                <a href="/#skill" className="font-black">スキル</a>
-                <a href="/#developed" className="font-black">制作物</a>
+                <Link href={"/#profile"}>自己紹介</Link>
+                <Link href="/#skill" >スキル</Link>
+                <Link href="/#developed">制作物</Link>
             </div>
             
             <div className="profile text-lg  bg-orange-200" id="profile">
                 <h1>自己紹介</h1>
                 <ruby>福永 司音<rt>フクナガ シオン</rt></ruby>
                 <p>誕生日 2003/12/26</p>
-                <p>趣味 
+                <p>趣味 </p>
                     <ul>
                         <li>ゲーム(APEX LEGENDS,VALORANT,ARK)</li>
                         <li>Unityでのゲーム制作</li>
                     </ul>
-                </p>
 
             </div>
             <div className="skills bg-lime-200" id="skill">
