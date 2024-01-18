@@ -69,7 +69,7 @@ export default function Index() {
                     <div className='grid grid-cols-2 gap-4'>
                         <div className="bg-gray-200 p-4 rounded-md shadow-md">
                             <h2 className='text-2xl font-bold'>車ゲーム</h2>
-                            <div className='developed-img w-40 h-32'>
+                            <div className='developed-img w-40 h-32 md:w-20 md:h-10'>
                                 <Link href={'https://unityroom.com/games/vehicle'} target='blank'>
                                     <Image
                                         src={vehicle}
@@ -82,7 +82,7 @@ export default function Index() {
                         </div>
                         <div className="bg-gray-200 p-4 rounded-md shadow-md">
                             <h2 className='text-2xl font-bold'>3D脱出ゲーム</h2>
-                            <div className='developed-img w-40 h-32'>
+                            <div className='developed-img w-40 h-32 md:w-20 md:h-10'>
                                 <Link href={'https://unityroom.com/games/3d_escape'} target='blank' >
                                     <Image
                                         src={escape}
