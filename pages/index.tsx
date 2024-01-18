@@ -13,7 +13,7 @@ export default function Index() {
     //最終的には書いていることの更新も考えてデータ化してループ分でhtml化する
     return (
         <div className="flex flex-col justify-center items-center text-center min-h-screen bg-gray-100">
-            <div className="border-solid border-2 border-gray-400 flex flex-col w-3/4 p-4 bg-white rounded-md shadow-md">
+            <div className="mt-2 border-solid border-2 border-gray-400 flex flex-col w-3/4 p-4 bg-white rounded-md shadow-md">
                 <Link href="#profile" className='hover:text-red-600 font-bold py-2'>自己紹介</Link>
                 <Link href="#skill" className='hover:text-red-600 font-bold py-2'>スキル</Link>
                 <Link href="#developed" className='hover:text-red-600 font-bold py-2'>制作物</Link>
