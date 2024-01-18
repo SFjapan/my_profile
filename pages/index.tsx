@@ -1,5 +1,7 @@
 export default function Index(){
     return(
-        <div>test vercel</div>
+        <div className="flex justify-center items-center">
+            <div>hello </div>
+        </div>
     )
 }
