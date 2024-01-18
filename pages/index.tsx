@@ -26,7 +26,7 @@ export default function Index() {
                     <p className="mb-2">誕生日 2003/12/26</p>
                     <p className="mb-2">趣味</p>
                     <ul className="list-disc list-inside text-left">
-                        <li>ゲーム(APEX LEGENDS,VALORANT,ARK)</li>
+                        <li>ゲーム(APEX,VALORANT,ARK)</li>
                         <li>Unityでのゲーム制作</li>
                     </ul>
                 </div>
