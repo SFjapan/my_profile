@@ -26,7 +26,7 @@ export default function Page() {
 
             <div className="flex flex-col">
                 <h2 className="text-2xl text-center font-semibold mb-2">概要</h2>
-                <div className="flex font-bold items-center">
+                <div className="flex font-bold items-center mb-3">
                     <Image
                         src={img1}
                         alt="image 1"
@@ -37,7 +37,7 @@ export default function Page() {
                         結果の保存方法はゲーム画面右下の保存ボタンを押すことでデータベースにユーザー名、正解率、かかった時間が保存されます。
                     </span>
                 </div>
-                <div className="flex font-bold items-center">
+                <div className="flex font-bold items-center mb-3">
                     <Image
                         src={img2}
                         alt="image 2"
@@ -48,7 +48,7 @@ export default function Page() {
                         データベースのソート機能で正打率順で表示されます。
                     </span>
                 </div>
-                <div className="flex font-bold items-center">
+                <div className="flex font-bold items-center mb-3">
                     <Image
                         src={img3}
                         alt="image 3"
