@@ -3,14 +3,17 @@ import Image from 'next/image'
 import 'tailwindcss/tailwind.css'
 import vehicle from '@/imgs/vehicle.png'
 import escape from '@/imgs/3d_escape.png'
+import getDevData from './datas/developedData'
 export default function Index() {
     /*書くこと
         ・書いていることリストlinkで飛ぶようにする
         ・自己紹介
         ・スキル
         ・制作物
+            ・それぞれのページを作る
     */
     //最終的には書いていることの更新も考えてデータ化してループ分でhtml化する
+    const Devdata = getDevData();
     return (
         <div className="flex flex-col justify-center items-center text-center min-h-screen bg-gray-100">
             <div className="mt-2 border-solid border-2 border-gray-400 flex flex-col w-3/4 p-4 bg-white rounded-md shadow-md">
@@ -20,7 +23,7 @@ export default function Index() {
             </div>
             <section className="profile-section p-6 my-6 bg-white rounded-md shadow-md" id="profile">
 
-                <div className="profile p-6 my-6 bg-white rounded-md shadow-md" id="profile">
+                <div className="profile p-6 my-6 bg-white rounded-md shadow-md">
                     <h1 className='text-4xl font-bold mb-4'>自己紹介</h1>
                     <ruby className="text-xl block">福永 司音<rt className="text-base">フクナガ シオン</rt></ruby>
                     <p className="mb-2">誕生日 2003/12/26</p>
@@ -33,7 +36,7 @@ export default function Index() {
             </section>
             <section className="profile-section p-6 my-6 bg-white rounded-md shadow-md" id="skill">
 
-                <div className="skills p-6 my-6 bg-white rounded-md shadow-md" id="skill">
+                <div className="skills p-6 my-6 bg-white rounded-md shadow-md">
                     <h1 className='text-4xl font-bold mb-4'>スキル</h1>
                     <div className="mb-4">
                         <h2 className='text-2xl font-bold'>プログラミング言語</h2>
@@ -64,40 +67,13 @@ export default function Index() {
             </section>
             <section className="profile-section p-6 my-6 bg-white rounded-md shadow-md" id="developed">
 
-                <div className="developed p-6 my-6 bg-white rounded-md shadow-md" id="developed">
+                <div className="developed p-6 my-6 bg-white rounded-md shadow-md" >
                     <h1 className='text-4xl font-bold mb-4'>制作物</h1>
                     <div className='grid grid-cols-2 gap-4'>
-                        <div className="bg-gray-200 p-4 rounded-md shadow-md">
-                            <h2 className='text-2xl font-bold'>車ゲーム</h2>
-                            <div className='developed-img md:w-40 md:h-32 sm:w-20 sm:h-1'>
-                                <Link href={'https://unityroom.com/games/vehicle'} target='blank'>
-                                    <Image
-                                        src={vehicle}
-                                        alt='game image'
-                                        className='object-cover w-full h-full'
-                                    />
-                                </Link>
-                            </div>
-                            <span className='description'>上から降ってくる乗り物をくっつけてスコアを競うゲームです。</span>
-                        </div>
-                        <div className="bg-gray-200 p-4 rounded-md shadow-md">
-                            <h2 className='text-2xl font-bold'>3D脱出ゲーム</h2>
-                            <div className='developed-img  md:w-40 md:h-32 sm:w-20 sm:h-10'>
-                                <Link href={'https://unityroom.com/games/3d_escape'} target='blank' >
-                                    <Image
-                                        src={escape}
-                                        alt='game image'
-                                        className='object-cover w-full h-full'
-                                    />
-                                </Link>
-                            </div>
-
-                            <span className='description'>落ちている箱を運んで謎を解き脱出するゲームです。</span>
-                        </div>
-                        <div className="bg-gray-200 p-4 rounded-md shadow-md">a</div>
-                        <div className="bg-gray-200 p-4 rounded-md shadow-md">a</div>
-                        <div className="bg-gray-200 p-4 rounded-md shadow-md">a</div>
+                        {Devdata}
                     </div>
+                   
+
                 </div>
             </section>
         </div>
