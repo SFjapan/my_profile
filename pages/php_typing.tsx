@@ -26,33 +26,33 @@ export default function Page() {
 
             <div className="flex flex-col">
                 <h2 className="text-2xl text-center font-semibold mb-2">概要</h2>
-                <div className="flex font-bold items-center mb-3">
+                <div className="flex flex-col md:flex-row font-bold items-center mb-3">
                     <Image
                         src={img1}
                         alt="image 1"
-                        className="w-1/4  object-cover rounded-md relative"
+                        className="w-3/4  sm:w-1/4  object-cover rounded-md relative"
                     />
                     <span>
                         メイン画面です。ログインしていない場合ゲームをプレイしても結果は保存されません。<br />
                         結果の保存方法はゲーム画面右下の保存ボタンを押すことでデータベースにユーザー名、正解率、かかった時間が保存されます。
                     </span>
                 </div>
-                <div className="flex font-bold items-center mb-3">
+                <div className="flex flex-col md:flex-row font-bold items-center mb-3">
                     <Image
                         src={img2}
                         alt="image 2"
-                        className="w-1/4  object-cover rounded-md relative"
+                        className="w-3/4  sm:w-1/4  object-cover rounded-md relative"
                     />
                     <span>
                         成績画面です。メイン画面上部の成績一覧を押すとゲーム画面右に出てきます。<br />
                         データベースのソート機能で正打率順で表示されます。
                     </span>
                 </div>
-                <div className="flex font-bold items-center mb-3">
+                <div className="flex flex-col md:flex-row font-bold items-center mb-3">
                     <Image
                         src={img3}
                         alt="image 3"
-                        className="w-1/4  object-cover rounded-md relative"
+                        className="w-3/4  sm:w-1/4  object-cover rounded-md relative"
                     />
                     <span>
                         ログイン画面です。メイン画面上部のログインまたは新規登録を押すと画面中央に出てきます。<br />
