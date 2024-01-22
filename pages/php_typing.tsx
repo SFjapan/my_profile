@@ -30,7 +30,7 @@ export default function Page() {
                     <Image
                         src={img1}
                         alt="image 1"
-                        className="w-3/4  sm:w-1/4  object-cover rounded-md relative"
+                        className="w-3/4  md:w-1/4  object-cover rounded-md relative"
                     />
                     <span>
                         メイン画面です。ログインしていない場合ゲームをプレイしても結果は保存されません。<br />
@@ -41,7 +41,7 @@ export default function Page() {
                     <Image
                         src={img2}
                         alt="image 2"
-                        className="w-3/4  sm:w-1/4  object-cover rounded-md relative"
+                        className="w-3/4  md:w-1/4  object-cover rounded-md relative"
                     />
                     <span>
                         成績画面です。メイン画面上部の成績一覧を押すとゲーム画面右に出てきます。<br />
@@ -52,7 +52,7 @@ export default function Page() {
                     <Image
                         src={img3}
                         alt="image 3"
-                        className="w-3/4  sm:w-1/4  object-cover rounded-md relative"
+                        className="w-3/4  md:w-1/4  object-cover rounded-md relative"
                     />
                     <span>
                         ログイン画面です。メイン画面上部のログインまたは新規登録を押すと画面中央に出てきます。<br />
