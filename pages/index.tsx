@@ -25,7 +25,10 @@ export default function Index() {
 
                 <div className="profile p-6 my-6 bg-white rounded-md shadow-md">
                     <h1 className='text-4xl font-bold mb-4'>自己紹介</h1>
-                    <ruby className="text-xl block">福永 司音<rt className="text-base">フクナガ シオン</rt></ruby>
+                    <ruby className="text-xl ">
+                        福永 司音
+                        <rt className='text-base'>フクナガ シオン</rt>
+                    </ruby>
                     <p className="mb-2">誕生日 2003/12/26</p>
                     <p className="mb-2">趣味</p>
                     <ul className="list-disc list-inside text-left">
@@ -76,7 +79,7 @@ export default function Index() {
 
                 </div>
             </section>
-            2024/01/19更新
+            2024/02/05更新
         </div>
 
 
