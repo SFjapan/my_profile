@@ -20,6 +20,8 @@ export default function Index() {
                 <Link href="#profile" className='hover:text-red-600 font-bold py-2'>自己紹介</Link>
                 <Link href="#skill" className='hover:text-red-600 font-bold py-2'>スキル</Link>
                 <Link href="#developed" className='hover:text-red-600 font-bold py-2'>制作物</Link>
+                <Link href="#creating" className='hover:text-red-600 font-bold py-2'>現在制作中</Link>
+
             </div>
             <section className="profile-section p-6 my-6 bg-white rounded-md shadow-md" id="profile">
 
@@ -78,6 +80,13 @@ export default function Index() {
                    
 
                 </div>
+            </section>
+            <section className='creating-section p-6 my-6 bg-white rounded-md shadow-md' id='creating'>
+                <pre>
+                    Unityを使ったサバイバルゲームの制作(進捗度30%)
+                    <br />
+                    Next.jsを使ったブログサイト(進捗度85%)
+                </pre>
             </section>
             2024/02/05更新
         </div>
