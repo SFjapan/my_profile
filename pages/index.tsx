@@ -1,8 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import 'tailwindcss/tailwind.css'
-import vehicle from '@/imgs/vehicle.png'
-import escape from '@/imgs/3d_escape.png'
 import getDevData from './datas/developedData'
 export default function Index() {
     /*書くこと
@@ -14,13 +12,14 @@ export default function Index() {
     */
     //最終的には書いていることの更新も考えてデータ化してループ分でhtml化する
     const Devdata = getDevData();
+    const creating = `Next.jsを使ったブログアプリ(完成度80%)`;
     return (
         <div className="flex flex-col justify-center items-center text-center min-h-screen bg-gray-100">
             <div className="mt-2 border-solid border-2 border-gray-400 flex flex-col w-3/4 p-4 bg-white rounded-md shadow-md">
-                <Link href="#profile" className='hover:text-red-600 font-bold py-2'>自己紹介</Link>
-                <Link href="#skill" className='hover:text-red-600 font-bold py-2'>スキル</Link>
-                <Link href="#developed" className='hover:text-red-600 font-bold py-2'>制作物</Link>
-                <Link href="#creating" className='hover:text-red-600 font-bold py-2'>現在制作中</Link>
+                <Link href="#profile" className='hover:text-red-600 font-bold py-2 text-4xl'>自己紹介</Link>
+                <Link href="#skill" className='hover:text-red-600 font-bold py-2 text-4xl'>スキル</Link>
+                <Link href="#developed" className='hover:text-red-600 font-bold py-2 text-4xl'>制作物</Link>
+                <Link href="#creating" className='hover:text-red-600 font-bold py-2 text-4xl'>現在制作中</Link>
 
             </div>
             <section className="profile-section p-6 my-6 bg-white rounded-md shadow-md" id="profile">
@@ -82,13 +81,12 @@ export default function Index() {
                 </div>
             </section>
             <section className='creating-section p-6 my-6 bg-white rounded-md shadow-md' id='creating'>
-                <pre>
-                    Unityを使ったサバイバルゲームの制作(進捗度30%)
-                    <br />
-                    Next.jsを使ったブログサイト(進捗度85%)
+                <h1 className='text-4xl font-bold mb-4'>制作中</h1>
+                <pre className='text-center'>
+                    {creating}
                 </pre>
             </section>
-            2024/02/05更新
+            2024/02/14更新
         </div>
 
 

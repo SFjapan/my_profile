@@ -38,6 +38,8 @@ export default function getDevData(){
               <Image
                 src={element.img}
                 alt='game image'
+                width={500}
+                height={500}
                 className='object-cover w-full h-full'
               />
             </Link>
