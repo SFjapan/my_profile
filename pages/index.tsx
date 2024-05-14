@@ -31,6 +31,7 @@ export default function Index() {
                         <rt className='text-base'>フクナガ シオン</rt>
                     </ruby>
                     <p className="mb-2">誕生日 2003/12/26</p>
+                    <p className="mb-2">mail:fs12265669@gmail.com</p>
                     <p className="mb-2">趣味</p>
                     <ul className="list-disc list-inside text-left">
                         <li>ゲーム(APEX,VALORANT,ARK)</li>
@@ -67,6 +68,12 @@ export default function Index() {
                             <li>FireBase(半年以上)</li>
                         </ul>
                     </div>
+                    <div className="mb-4">
+                        <h2 className='text-2xl font-bold'>そのほか</h2>
+                        <ul className="list-disc list-inside text-left">
+                            <li>Paizaスキルチェック Aランク</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
             <section className="profile-section p-6 my-6 bg-white rounded-md shadow-md" id="developed">
@@ -86,7 +93,7 @@ export default function Index() {
                     {creating}
                 </pre>
             </section>
-            2024/02/14更新
+            2024/05/14更新
         </div>
 
 
