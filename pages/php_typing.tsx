@@ -1,6 +1,6 @@
-import img1 from "@/imgs/php-typinggame-1.png"
-import img2 from "@/imgs/php-typinggame-2.png"
-import img3 from "@/imgs/php-typinggame-3.png"
+import img1 from "@/imgs/php_typing/php-typinggame-1.png"
+import img2 from "@/imgs/php_typing/php-typinggame-2.png"
+import img3 from "@/imgs/php_typing/php-typinggame-3.png"
 import Image from "next/image";
 import 'tailwindcss/tailwind.css'
 /*

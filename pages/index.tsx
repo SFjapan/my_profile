@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import 'tailwindcss/tailwind.css'
 import getDevData from './datas/developedData'
-export default function Index() {
+export default function Page() {
     /*書くこと
         ・書いていることリストlinkで飛ぶようにする
         ・自己紹介
