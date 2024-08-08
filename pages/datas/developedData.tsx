@@ -31,7 +31,7 @@ const data =[
     },
     {
       name:"チーム制作",
-      description:"6人チームでの制作です。",
+      description:"5人チームでの制作です。",
       img:kaomangai,
       link:"/kaomangai",
     },
